@@ -1,0 +1,43 @@
+{%extends "vehic/layout.html"%}
+
+{%block body%}
+<form method="POST" class="add-content" >
+    {%csrf_token%}
+
+    <h4>Update vehicle</h4>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="form4Example1" class="form-control" placeholder="Vehicle Name" value="{{form.name}}" name="vname"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Temperature" value="{{form.temperature}}" name="temperature" />
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Average Speed" value="{{form.averageSpeed}}" name="avspeed"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Speed" value="{{form.speed}}" name="speed"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Engine Status" value="{{form.engineStatus}}" name="engine"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Fuel Level" value="{{form.fuelLevel}}" name="fuel" />
+      
+    </div>
+  
+
+
+    <button type="submit" class="btn btn-primary btn-block mb-4" style="width: 90px;">Send</button>
+  </form>
+{%endblock%}

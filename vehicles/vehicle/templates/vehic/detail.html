@@ -1,0 +1,35 @@
+{%extends "vehic/layout.html"%}
+
+{%block body%}
+<div class="detail-wrapper">
+    <div class="header-wrapper">
+        <div class="det-header">
+            <div class="prof">
+                <img src="https://images.unsplash.com/photo-1614166435766-4aebe835ccf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="profil">
+            
+                <img src="https://images.unsplash.com/photo-1616096969071-7fcd4cda8007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="camera">
+                <img src="https://images.unsplash.com/photo-1585497398020-fcc4de0734e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="camera">
+              
+            </div>
+            
+            
+            {%include 'vehic/onOff.html'%}
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" alt="" class="map">
+      
+        <div class="side-detail">
+            <div class="side"> <strong>Speed</strong>  <br><br>{{obj.speed}}</div>
+            <div class="side"> <strong> Average Speed </strong><br><br>{{obj.averageSpeed}}</div>
+        </div>
+      
+    </div>
+    <div class="alt-detail">
+        <div class="alt"> <strong>Engine Status</strong><br><br>{{obj.engineStatus}}  </div>
+        <div class="alt"> <strong>Fuel level</strong>  <br><br>{{obj.fuelLevel}}</div>
+        <div class="alt"> <strong>Temprature</strong>  <br><br>{{obj.temperature}}</div>
+    </div>
+</div>
+
+{%endblock%}

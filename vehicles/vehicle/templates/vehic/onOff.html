@@ -1,0 +1,10 @@
+
+
+<form class="btn-container" method="post" action="{%url 'like_post'%}">
+    {%csrf_token%}
+   
+    <button type="submit" name="veh_id" class="on" value="{{vehicle.id}}">ON</button>
+
+    <button type="submit" name="veh_id"  class="off" value="{{vehicle.id}}"> OFF</button>
+   
+</form>

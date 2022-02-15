@@ -1,0 +1,43 @@
+{%extends "vehic/layout.html"%}
+{%block body%}
+
+<form method="post" class="add-content">
+    {%csrf_token%}
+
+    <h4>Add vehicle</h4>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="form4Example1" class="form-control" placeholder="Vehicle Name" name="vname"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Temperature" name="temperature" />
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Average Speed" name="avspeed"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Speed" name="speed"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Engine Status" name="engine"/>
+      
+    </div>
+    <div class="form-outline mb-4">
+
+        <input type="text" id="form4Example1" class="form-control" placeholder="Fuel Level" name="fuel" />
+      
+    </div>
+  
+
+
+    <button type="submit" class="btn btn-primary btn-block mb-4" style="width: 90px;">Send</button>
+  </form>
+{%endblock%}

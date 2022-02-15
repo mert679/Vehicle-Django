@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(250, 242, 233);
+    
+}
+.main{
+    padding: 2px;
+
+    background-color: cadetblue;
+    background-color: rgb(96, 136, 136);
+}
+.header{
+    padding: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pp{
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidewrapper .sidebar{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+
+    background-color: rgb(96, 136, 136);
+    
+}
+.logowarpper{
+
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logowarpper>img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.sidebar ul li.navigation{
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation-content{
+    display: flex; 
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: px;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(44, 31, 6);
+    font-size: 17px; 
+    padding: 6px 15px;
+    margin-top: 25px;
+}
+.navigation-content>a:hover{
+    background-color: rgb(17, 33, 34);
+    border-radius: 5px;
+    color: wheat;
+    transition: ease-in 0.6s;
+    
+   
+}
+.content-block{
+    margin-left: 190px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+/*add*/
+
+.form-outline.mb-4{
+    width: 350px;
+    margin-top: 10px;
+}
+.add-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*main page*/
+td>form>.btn{
+ 
+   
+    padding: 3px 12px;
+    border-radius: 4px;
+    color: wheat;
+    cursor: pointer;
+    
+}
+
+td>a{
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    color: wheat;
+    margin-right: 0px;
+    
+}
+td>a:hover{
+    background-color: rgb(37, 37, 35);
+    transition: 0.5s ease-in-out;
+    color: wheat;
+    border-radius: 12px;
+}
+.table{
+    margin-top: 25px;
+    margin-right: 15px;
+}
+.table>tr>th{
+    text-align: center;
+}
+.edit{
+   margin-right: 50px;
+}
+/*detail page*/
+
+.detail-wrapper{
+    width: 950px;
+
+    margin-top: 20px;
+}
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.det-header{
+
+    width: 850px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.prof{
+    width: 440px;
+    
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.profil{
+    width: 90px;
+    height: 90px;
+    border: 1px solid slategray;
+    border-radius: 50%;
+}
+.camera{
+    width: 120px;
+    border: 1px solid silver;
+    height: 50px;
+}
+.on{
+    width: 120px;
+    height: 50px;
+    margin-left: 10px;
+    border: 1px solid green;
+    color: green;
+    background-color: white;
+}
+.on:hover{
+    background-color: green;
+    color: aliceblue;
+}
+.off{
+    width: 120px;
+    height: 50px;  
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+}  
+.off:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.map{
+    width: 450px;
+    height: 250px;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+.alt-detail{
+    width: 870px;
+    
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.alt{
+    width: 200px;
+    height: 80px;
+
+    text-align: center;
+    padding: 10px;
+}
+.content-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.side-detail{
+    width: 200px;
+    height: 260px;
+    margin-left: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.side{
+    width: 200px;
+    height: 80px;
+
+    text-align: center;
+}
+
+
+
